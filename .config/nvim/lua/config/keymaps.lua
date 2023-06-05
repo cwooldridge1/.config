@@ -20,6 +20,11 @@ vim.api.nvim_set_keymap("v", "y", "ygv<Esc>", {})
 
 -- highlights
 vim.api.nvim_set_keymap("n", "<leader>h", "noh", {})
+
+--moving lines
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+
 -- copilot
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_assume_mapped = true
@@ -32,3 +37,15 @@ vim.api.nvim_set_keymap(
   "<cmd>lua local copilot_keys = vim.fn['copilot#Accept']() if copilot_keys ~= '' then vim.api.nvim_feedkeys(copilot_keys, 'i', true) else require'cmp'.mapping.abort() end<CR>",
   {}
 )
+
+-- harpoon
+vim.api.nvim_set_keymap("n", "<leader>h", '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>', {})
+vim.api.nvim_set_keymap("n", "<leader>ha", '<cmd>lua require("harpoon.mark").add_file()<CR>', {})
+vim.api.nvim_set_keymap("n", "<leader>hh", '<cmd>lua require("harpoon.ui").nav_next()<CR>', {})
+vim.api.nvim_set_keymap("n", "<leader>hl", '<cmd>lua require("harpoon.ui").nav_prev()<CR>', {})
+
+--trouble
+vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>TroubleToggle<CR>", {})
+
+-- undo tree
+vim.keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<CR>")

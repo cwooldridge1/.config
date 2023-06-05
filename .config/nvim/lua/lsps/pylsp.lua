@@ -17,6 +17,7 @@ local opts = {
             "C901", -- Class method is too complex error
             "E265", -- Block comment should start with '# ' error
             "E303", -- Too many blank lines (3) error
+            "E402", -- Module level import not at top of file error
           },
         },
       },

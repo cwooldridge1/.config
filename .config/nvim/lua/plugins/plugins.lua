@@ -1,4 +1,8 @@
 return {
+  { "dsznajder/vscode-es7-javascript-react-snippets", run = "yarn install --frozen-lockfile && yarn compile" },
+  { "brenoprata10/nvim-highlight-colors" },
+  { "nvim-lua/plenary.nvim" },
+  { "theprimeagen/harpoon" },
   {
     "windwp/nvim-ts-autotag",
     requires = { "nvim-treesitter/nvim-treesitter" },
@@ -22,4 +26,19 @@ return {
       end)
     end,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "stylua",
+        "shellcheck",
+        "shfmt",
+        "flake8",
+        "python-lsp-server",
+        "typescript-language-server",
+        "svelte-language-server",
+      },
+    },
+  },
+  { "mbbill/undotree" },
 }
