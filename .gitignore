@@ -1,3 +1,5 @@
-.mouseless/**/*
+.mouseless/*
 !.mouseless/configs/
+.mouseless/configs/*
+!.mouseless/configs/config.yaml
 !.mouseless/user_prefs.yaml
