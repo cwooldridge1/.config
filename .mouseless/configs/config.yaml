@@ -35,8 +35,8 @@ grid_configs:
   strategy: subgrid
   subgrid_dims:
   - 5
-  - 3
-  subgrid_mouse_action_keys: QWERT ASDFG ZXCVB
+  - 4
+  subgrid_mouse_action_keys: QWERT ASDFG HJKL; NM,./
 keymaps:
 - entries:
     back mouse button (w/o overlay): null
@@ -105,7 +105,7 @@ style_configs:
   - 0
   - 0
   - 0
-  - 0.25
+  - 0
   char_spacing_cell_width_ratio: 0.5
   char_spacing_font_size_ratio: 0.5
   char_spacing_strategy: cell_width_relative
@@ -125,10 +125,10 @@ style_configs:
   - 1.0
   - 0.7
   cursor_rgba:
-  - 1.0
+  - 1
   - 0.54
-  - 0.0
-  - 0.7
+  - 0
+  - 1
   cursor_right_button_rgba:
   - 0.92
   - 0.32
@@ -138,9 +138,9 @@ style_configs:
   font_size_multiplier: 0.5
   grid_line_style: lines
   grid_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
   - 0.5
   highlight_rgba:
   - 0.77
@@ -156,10 +156,10 @@ style_configs:
   - 1.0
   - 0.5
   subgrid_text_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 0.5
+  - 1
+  - 1
+  - 1
+  - 0
   text_rgba:
   - 0.6078431372549019
   - 0.9803921568627451
